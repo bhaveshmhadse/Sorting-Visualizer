@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(225, 158, 95);
+}
+
+.button {
+}
+
+.button1 {
+  border-radius: 8px;
+}
+
+.button2 {
+  height: 35px;
+  width: 80;
+  border-radius: 12px;
+
+  background-color: coral;
+  /* padding: 50px 50px; */
+}
+
+.button3 {
+  height: 35px;
+  width: 80;
+  border-radius: 12px;
+
+  background-color: cornflowerblue;
+  /* padding: 50px 50px; */
+}
+
+.button4 {
+  height: 35px;
+  width: 80;
+  border-radius: 12px;
+
+  background-color: darkmagenta;
+  /* padding: 50px 50px; */
+}
+
+.button5 {
+  height: 35px;
+  width: 80;
+  border-radius: 12px;
+
+  background-color: darkgreen;
+  /* padding: 50px 50px; */
+}
+
+.button6 {
+  height: 35px;
+  width: 80;
+  border-radius: 12px;
+
+  background-color: goldenrod;
+  /* padding: 50px 50px; */
+}
+
+.button7 {
+  height: 35px;
+  width: 80;
+  border-radius: 12px;
+
+  background-color: chartreuse;
+  /* padding: 50px 50px; */
+}
+
+.button8 {
+  height: 35px;
+  width: 80;
+  border-radius: 12px;
+  background-color: rgb(243, 49, 49);
+  /* padding: 50px 50px; */
+}
