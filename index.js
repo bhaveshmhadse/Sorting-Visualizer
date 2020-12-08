@@ -38,7 +38,7 @@ async function displayEveryElementOfArray() {
     // document.write('<br>');
   }
   i = 1;
-  await sleep(50);
+  await sleep(time);
   // document.body.innerHTML = ' ';
 }
 
