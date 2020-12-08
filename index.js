@@ -47,7 +47,7 @@ function sleep(ms) {
 }
 
 async function insertionSort() {
-  time = 50;
+  time = 10;
   for (let i = 1; i < array.length; i++) {
     let current = array[i];
     let j = i - 1;
