@@ -31,7 +31,7 @@ async function displayEveryElementOfArray() {
   for (let j of array) {
     document.getElementById(`${i}`).style = `height:${
       j * 4 * 0.1
-    }vh; padding: 0rem; margin: .05rem; background-color: rgb(50,${
+    }vh; padding: 0rem; margin: .02rem; background-color: rgb(50,${
       (j * 150) / 100
     },${j * (250 / 100)}`;
     i++;
