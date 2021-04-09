@@ -1,7 +1,7 @@
 // location.reload();
 let array = [];
-for (let i = 0; i < 65; i++) {
-  array.push(Math.random() * (65 - 1) + 1);
+for (let i = 0; i < 59; i++) {
+  array.push(Math.random() * (59 - 1) + 1);
 }
 
 async function Shuffle() {
@@ -9,8 +9,8 @@ async function Shuffle() {
   // refreshpage();
   // document.body.innerHTML = '';
   array.length = 0;
-  for (let i = 0; i < 65; i++) {
-    array.push(Math.random() * (65 - 1) + 1);
+  for (let i = 0; i < 59; i++) {
+    array.push(Math.random() * (59 - 1) + 1);
   }
   displayEveryElementOfArray();
 }
@@ -29,24 +29,29 @@ async function displayArray() {
 }
 async function displayEveryElementOfArray() {
   for (let j of array) {
-    document.getElementById(`${i}`).style.height = `${j * 4}px`;
-    document.getElementById(`${i}`).style.width = '0.0000001px';
-    document.getElementById(`${i}`).style.backgroundColor = `rgb(50,${
+    document.getElementById(`${i}`).style = `height:${
+      j * 4 * 0.1
+    }vh; padding: 0rem; margin: .05rem; background-color: rgb(50,${
       (j * 150) / 100
     },${j * (250 / 100)}`;
     i++;
-    // document.write('<br>');
   }
   i = 1;
   await sleep(time);
-  // document.body.innerHTML = ' ';
 }
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+async function displayButtons() {
+  for (let i = 1; i <= 59; i++) {
+    document.getElementById(`${i}`).style = 'display: inline-block';
+  }
+}
+
 async function insertionSort() {
+  //   displayButtons();
   time = 10;
   for (let i = 1; i < array.length; i++) {
     let current = array[i];
@@ -60,10 +65,11 @@ async function insertionSort() {
     array[j + 1] = current;
   }
   await sleep(time);
-  displayArray();
+  //   displayArray();
 }
 
 async function bubbleSort() {
+  //   displayButtons();
   time = 10;
   for (let i = 0; i <= array.length; i++) {
     for (let j = 0; j <= array.length; j++) {
@@ -77,10 +83,11 @@ async function bubbleSort() {
     }
   }
   await sleep(time);
-  displayArray();
+  //   displayArray();
   // array.length = 0;
 }
 async function selectionSort() {
+  //   displayButtons();
   time = 50;
   for (let i = 0; i < array.length; i++) {
     let minimum = i;
@@ -100,7 +107,8 @@ async function selectionSort() {
 // array.length = 0;
 
 async function quickSort() {
-  let quick = setTimeout(partition, 1000, array, 0, 64);
+  //   displayButtons();
+  let quick = setTimeout(partition, 1000, array, 0, 58);
 }
 
 async function mSort() {
